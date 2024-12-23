@@ -24,8 +24,8 @@ function generateHtml(result: string, cicon: boolean, server: string, footer: st
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      background-color: #354E43;
-      color: #F6FFF8;
+      background-color: #2e3440;
+      color: #d8dee9;
     }
   </style>
 </head>
@@ -33,11 +33,11 @@ function generateHtml(result: string, cicon: boolean, server: string, footer: st
   <div class="container mx-auto py-8">
     ${cicon ? `<div class="text-center"><img src=${icon64} alt="icon" class="w-70px h-70px mx-auto" /></div>` : ''}
     <div class="text-center mt-4">
-      <div class="text-lg font-bold text-white">${result}</div>
+      <div class="text-lg font-bold text-[#d8dee9]">${result}</div>
     </div>
   </div>
-  <footer class="bg-[#42584F] text-center py-2">
-    <p class="text-sm text-[#A4C3B2]">${footer}</p>
+  <footer class="bg-[#3b4252] text-center py-2">
+    <p class="text-sm text-[#d8dee9]">${footer}</p>
   </footer>
 </body>
 </html>`;
